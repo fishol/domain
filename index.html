@@ -34,7 +34,7 @@
         .fishol {
             text-align: center; /* 文字居中对齐 */
             margin-bottom: 80px; /* 底部外边距 80px */
-            margin-top: -180px; /* 顶部外边距 -180px */
+            margin-top: -200px; /* 顶部外边距 -180px */
         }
 
         #logo {
@@ -64,6 +64,7 @@
             flex-wrap: wrap; /* 子元素换行 */
             justify-content: center; /* 水平居中对齐 */
             gap: 30px; /* 设置子元素之间的间距 */
+            margin-top: 0; /* 移除默认顶部外边距 */
         }
 
         /* 每个域名块样式 */
@@ -107,10 +108,11 @@
             text-decoration: none; /* 移除链接下划线 */
         }
 
-        /* 响应式设计：手机端将域名块竖排展示 */
+        /* 响应式设计：手机端将域名块竖排展示，并上移 */
         @media (max-width: 600px) {
             .domains {
                 flex-direction: column; /* 垂直排列子元素 */
+                margin-top: -20px; /* 上移域名块 */
             }
             .fishol {
                 margin-top: 20px; /* 调整Logo的上外边距 */
@@ -164,7 +166,7 @@
     </main>
     <footer>
         <p>FISHOL的意思是晒咸鱼</p>
-        <a href="I@YuTianSheng.com" target="_blank">
+        <a href="I@YuTianSheng.com">
             <p>©FishOnline Studio</p> <!-- 支付方式说明 -->
         </a>
     </footer>
