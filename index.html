@@ -1,9 +1,14 @@
 <!DOCTYPE html> <!-- 声明文档类型为 HTML5 -->
 <html lang="zh"> <!-- 设置文档语言为中文 -->
 <head>
+
     <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口以适应不同设备宽度 -->
-    <title>FISHOL卖域名</title> <!-- 设置网页标题 -->
+	<meta name="description" content="FishOnline的意思是晒咸鱼……"/>
+    <meta name="keywords" content="fishol"/>
+	<link rel="icon" href="ico.png">
+    <title>F I S H O L</title> <!-- 设置网页标题 -->
+
     <style>
         /* 设置全局字体和背景颜色 */
         body {
@@ -27,16 +32,36 @@
         }
 
         /* Logo 样式 */
-        .logo {
+        .fishol {
             text-align: center; /* 文字居中对齐 */
             margin-bottom: 80px; /* 底部外边距 80px */
             margin-top: -180px; /* 顶部外边距 -180px */
         }
 
-        .logo img {
-            width: 150px; /* 设置图片宽度为 150px */
-            height: auto; /* 自动调整高度 */
+        #logo {
+			height: 150px;
+			width: 150px;
+			background-image: url(logo.png);
+			background-size: cover;             /* 背景全覆盖 */
+			background-position: center;        /* 图片居中定位 */
+			background-repeat: no-repeat;       /* 背景不重复 */
+			transition: all .4s linear;  /* 小图标变大+变色 所用时间 */
         }
+		
+		/* 鼠标悬停时显示的图片 */
+		#logo:hover {
+			height: 150px;
+			width: 150px;
+            background-image: url(logo.gif); /* 鼠标悬停时显示的图片 */
+			background-size: cover;             /* 背景全覆盖 */
+			background-position: center;        /* 图片居中定位 */
+			background-repeat: no-repeat;       /* 背景不重复 */
+			transform: scale(1.2);       /* 按比例放大 */
+        }
+		
+		
+		
+		
 
         /* 域名展示部分样式 */
         .domains {
@@ -99,12 +124,13 @@
             text-decoration: none; /* 移除链接下划线 */
             color: inherit; /* 继承父元素颜色，保持样式一致 */
         }
+			
     </style>
 </head>
 <body>
     <main>
-        <div class="logo">
-            <img src="logo.png" alt="Logo"> <!-- Logo 图片 -->
+        <div class="fishol">
+            <div id="logo"></div> <!-- Logo 图片 -->
         </div>
         <section class="domains">
             <a href="https://www.fishol.cn" class="domain-link"  target="_blank"> <!-- 链接到 fishol.cn -->
@@ -140,9 +166,9 @@
         </section>
     </main>
     <footer>
-        <p>i@yutiansheng.com</p>
-        <a href="https://etherscan.io/address/0x00c46c335b5e18b0156863fb55f725bb1fab8841" class="domain-link"  target="_blank">
-		<p>五个域名，打包1000000USDT，仅支持加密货币付款。</p>		<!-- 支付方式说明 -->
+        <p>FISHOL的意思是晒咸鱼</p>
+        <a href="I@YuTianSheng.com"  target="_blank">
+		<p>©FishOnline Studio</p>		<!-- 支付方式说明 -->
 		</a>
 	</footer>
     <script src="script.js"></script> <!-- 引用外部脚本文件 -->
