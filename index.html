@@ -1,12 +1,11 @@
 <!DOCTYPE html> <!-- 声明文档类型为 HTML5 -->
 <html lang="zh"> <!-- 设置文档语言为中文 -->
 <head>
-
     <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口以适应不同设备宽度 -->
-	<meta name="description" content="FishOnline的意思是晒咸鱼……"/>
+    <meta name="description" content="FishOnline的意思是晒咸鱼……"/>
     <meta name="keywords" content="fishol"/>
-	<link rel="icon" href="ico.png">
+    <link rel="icon" href="ico.png">
     <title>F I S H O L</title> <!-- 设置网页标题 -->
 
     <style>
@@ -39,29 +38,25 @@
         }
 
         #logo {
-			height: 150px;
-			width: 150px;
-			background-image: url(logo.png);
-			background-size: cover;             /* 背景全覆盖 */
-			background-position: center;        /* 图片居中定位 */
-			background-repeat: no-repeat;       /* 背景不重复 */
-			transition: all .4s linear;  /* 小图标变大+变色 所用时间 */
+            height: 150px;
+            width: 150px;
+            background-image: url(logo.png);
+            background-size: cover;             /* 背景全覆盖 */
+            background-position: center;        /* 图片居中定位 */
+            background-repeat: no-repeat;       /* 背景不重复 */
+            transition: all .4s linear;  /* 小图标变大+变色 所用时间 */
         }
-		
-		/* 鼠标悬停时显示的图片 */
-		#logo:hover {
-			height: 150px;
-			width: 150px;
+
+        /* 鼠标悬停时显示的图片 */
+        #logo:hover {
+            height: 150px;
+            width: 150px;
             background-image: url(logo.gif); /* 鼠标悬停时显示的图片 */
-			background-size: cover;             /* 背景全覆盖 */
-			background-position: center;        /* 图片居中定位 */
-			background-repeat: no-repeat;       /* 背景不重复 */
-			transform: scale(1.2);       /* 按比例放大 */
+            background-size: cover;             /* 背景全覆盖 */
+            background-position: center;        /* 图片居中定位 */
+            background-repeat: no-repeat;       /* 背景不重复 */
+            transform: scale(1.2);       /* 按比例放大 */
         }
-		
-		
-		
-		
 
         /* 域名展示部分样式 */
         .domains {
@@ -117,6 +112,9 @@
             .domains {
                 flex-direction: column; /* 垂直排列子元素 */
             }
+            .fishol {
+                margin-top: 20px; /* 调整Logo的上外边距 */
+            }
         }
 
         /* 链接样式，确保链接不会影响 div 样式 */
@@ -124,7 +122,6 @@
             text-decoration: none; /* 移除链接下划线 */
             color: inherit; /* 继承父元素颜色，保持样式一致 */
         }
-			
     </style>
 </head>
 <body>
@@ -133,31 +130,31 @@
             <div id="logo"></div> <!-- Logo 图片 -->
         </div>
         <section class="domains">
-            <a href="https://www.fishol.cn" class="domain-link"  target="_blank"> <!-- 链接到 fishol.cn -->
+            <a href="https://www.fishol.cn" class="domain-link" target="_blank"> <!-- 链接到 fishol.cn -->
                 <div class="domain">
                     <h2>fishol.cn</h2> <!-- 域名标题 -->
                     <p>占个坑 .cn域名是大坑</p> <!-- 域名描述 -->
                 </div>
             </a>
-            <a href="https://www.fishol.com.cn" class="domain-link"  target="_blank"> <!-- 链接到 fishol.com.cn -->
+            <a href="https://www.fishol.com.cn" class="domain-link" target="_blank"> <!-- 链接到 fishol.com.cn -->
                 <div class="domain">
                     <h2>fishol.com.cn</h2> <!-- 域名标题 -->
                     <p>不建议备案！</p> <!-- 域名描述 -->
                 </div>
             </a>
-            <a href="https://www.fishol.me" class="domain-link"  target="_blank"> <!-- 链接到 fishol.me -->
+            <a href="https://www.fishol.me" class="domain-link" target="_blank"> <!-- 链接到 fishol.me -->
                 <div class="domain">
                     <h2>fishol.me</h2> <!-- 域名标题 -->
                     <p>自用博客 看心情更新</p> <!-- 域名描述 -->
                 </div>
             </a>
-            <a href="https://www.fishol.org" class="domain-link"  target="_blank"> <!-- 链接到 fishol.org -->
+            <a href="https://www.fishol.org" class="domain-link" target="_blank"> <!-- 链接到 fishol.org -->
                 <div class="domain">
                     <h2>fishol.org</h2> <!-- 域名标题 -->
                     <p>自用导航</p> <!-- 域名描述 -->
                 </div>
             </a>
-            <a href="https://www.fishol.net" class="domain-link"  target="_blank"> <!-- 链接到 fishol.net -->
+            <a href="https://www.fishol.net" class="domain-link" target="_blank"> <!-- 链接到 fishol.net -->
                 <div class="domain">
                     <h2>fishol.net</h2> <!-- 域名标题 -->
                     <p>闲置域名 如你所见</p> <!-- 域名描述 -->
@@ -167,10 +164,10 @@
     </main>
     <footer>
         <p>FISHOL的意思是晒咸鱼</p>
-        <a href="I@YuTianSheng.com"  target="_blank">
-		<p>©FishOnline Studio</p>		<!-- 支付方式说明 -->
-		</a>
-	</footer>
+        <a href="I@YuTianSheng.com" target="_blank">
+            <p>©FishOnline Studio</p> <!-- 支付方式说明 -->
+        </a>
+    </footer>
     <script src="script.js"></script> <!-- 引用外部脚本文件 -->
 </body>
 </html>
